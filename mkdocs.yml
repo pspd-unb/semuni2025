@@ -1,0 +1,178 @@
+site_name: Introdução a programação de aplicações em nuvem
+site_url: https://mydomain.org/mysite
+site_description: Visão introdutória sobre as principais tecnologias utilizadas para desenvolvimento de aplicações de larga escala em nuvem
+
+# Repository
+repo_name: pspd-unb/semuni2025
+repo_url: https://github.com/pspd-unb/semuni2025
+
+# Copyright
+copyright: Copyright &copy; 2025 - Universidade de Brasília
+
+# Navigation
+nav:
+  - Home: index.md
+  - Introdução:
+    - Visão Geral: modulo1/visao-geral.md
+    - Arquiteturas Paralelas: modulo1/arquiteturas-paralelas.md
+    - Arquiteturas Distribuídas: modulo1/arquiteturas-distribuidas.md
+  - Programação Distribuída:
+    - MPI: modulo2/mpi.md
+    - Brokers: modulo2/brokers.md
+    - xRPC: modulo2/xrpc.md
+  - Programação Paralela:
+    - OpenMP: modulo3/openmp.md
+    - GPUs: modulo3/gpus.md
+    - Paralelismo em C: modulo3/paralelismo-c.md
+  - Cloud Native & Kubernetes:
+    - Introdução ao Cloud Native: modulo4/cloud-native.md
+    - Kubernetes Básico: modulo4/kubernetes-basico.md
+    - DevOps com Kubernetes: modulo4/devops-kubernetes.md
+    - Deploy de Aplicações: modulo4/deploy-aplicacoes.md
+
+# Configuration
+theme:
+  name: material
+  
+  # Color scheme
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  # Typography
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Features
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  # Custom logo and favicon
+  icon:
+    logo: material/cloud
+    repo: fontawesome/brands/git-alt
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pspd-unb/semuni2025
+    - icon: fontawesome/solid/university
+      link: https://www.unb.br/
+  
+  # Version provider
+  version:
+    provider: mike
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: pspd-unb
+      repo: semuni2025
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

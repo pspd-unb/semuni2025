@@ -1,0 +1,242 @@
+/* Custom CSS for modern, professional, and clean design */
+
+/* Root variables for consistent theming */
+:root {
+  --md-primary-fg-color: #1976d2;
+  --md-primary-fg-color--light: #42a5f5;
+  --md-primary-fg-color--dark: #1565c0;
+  --md-accent-fg-color: #1976d2;
+  --md-code-bg-color: #f8f9fa;
+  --md-code-fg-color: #37474f;
+  --custom-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --custom-border-radius: 8px;
+}
+
+/* Dark mode variables */
+[data-md-color-scheme="slate"] {
+  --md-code-bg-color: #2e3440;
+  --md-code-fg-color: #d8dee9;
+  --custom-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Enhanced typography */
+.md-typeset {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.md-typeset h1 {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Improved code blocks */
+.md-typeset .highlight {
+  border-radius: var(--custom-border-radius);
+  box-shadow: var(--custom-shadow);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.md-typeset pre {
+  border-radius: var(--custom-border-radius);
+  padding: 1rem 1.2rem;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-size: 0.85em;
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+/* Enhanced admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--custom-border-radius);
+  box-shadow: var(--custom-shadow);
+  border: none;
+  overflow: hidden;
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > .admonition-title {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Card-like styling for content sections */
+.md-typeset .highlight,
+.md-typeset .admonition,
+.md-typeset .tabbed-set {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .highlight:hover,
+.md-typeset .admonition:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .highlight:hover,
+[data-md-color-scheme="slate"] .md-typeset .admonition:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* Navigation improvements */
+.md-nav__item--active > .md-nav__link {
+  font-weight: 500;
+}
+
+.md-nav__link:hover {
+  color: var(--md-primary-fg-color);
+}
+
+/* Header styling */
+.md-header {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.md-header__title {
+  font-weight: 400;
+}
+
+/* Footer improvements */
+.md-footer {
+  background-color: var(--md-footer-bg-color);
+  border-top: 1px solid var(--md-default-border-color);
+}
+
+/* Table improvements */
+.md-typeset table:not([class]) {
+  border-radius: var(--custom-border-radius);
+  overflow: hidden;
+  box-shadow: var(--custom-shadow);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--md-default-border-color);
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+/* Button improvements */
+.md-typeset .md-button {
+  border-radius: var(--custom-border-radius);
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-transform: none;
+}
+
+.md-typeset .md-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--custom-shadow);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Search improvements */
+.md-search__form {
+  border-radius: var(--custom-border-radius);
+}
+
+.md-search__input {
+  border-radius: var(--custom-border-radius);
+}
+
+/* Tab improvements */
+.md-typeset .tabbed-set {
+  border-radius: var(--custom-border-radius);
+  box-shadow: var(--custom-shadow);
+  overflow: hidden;
+}
+
+.md-typeset .tabbed-labels > label {
+  font-weight: 500;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.md-content__inner {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Print styles */
+@media print {
+  .md-typeset .highlight {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .md-typeset .admonition {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Accessibility improvements */
+.md-typeset a:focus,
+.md-nav__link:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Loading animation for instant navigation */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  position: relative;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--md-accent-fg-color);
+  border-radius: 1px;
+}
