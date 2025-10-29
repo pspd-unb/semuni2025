@@ -33,6 +33,7 @@ nav:
     - Kubernetes - Teoria: modulo4/kubernetes-teoria.md
     - Kubernetes - Prática: modulo4/kubernetes-pratica.md
     - Projeto 2: modulo4/projeto2.md
+    - Extra - Monitoramento com Prometheus: modulo4/monitoramento.md
 
 # Configuration
 theme:

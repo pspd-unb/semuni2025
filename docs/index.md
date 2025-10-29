@@ -66,7 +66,7 @@ Para aproveitar ao máximo este curso, você precisará de:
 | **Programação** | C, OpenMP, MPI |
 | **Paralelismo** | GPUs, Processamento Multi-core |
 | **Distribuição** | Brokers, xRPC, Message Passing |
-| **Cloud Native** | Kubernetes, DevOps |
+| **Cloud Native** | Microsserviços, DevOps, Docker, Kubernetes |
 | **Conceitos-Chave** | Programação Paralela, Programação Distribuída |
 
 ## Cronograma do Curso
@@ -95,6 +95,7 @@ Para aproveitar ao máximo este curso, você precisará de:
     ![FWCruz](https://via.placeholder.com/150x150/1976d2/ffffff?text=JS){ align=left width=80 }
 
     **Coordenador do Curso**
+
     Professor da FCTE/UnB
 
 -   :material-account-circle-outline: **Bruno Martins**
@@ -104,6 +105,7 @@ Para aproveitar ao máximo este curso, você precisará de:
     ![Bruno Martins](https://avatars.githubusercontent.com/u/30751876?v=4){ align=left width=80 }
 
     **Membro da Equipe**
+
     Graduando em Engenharia de Software (FCTE/UnB)  
 
 -   :material-account-circle-outline: **Thiago Vivan**
@@ -113,11 +115,12 @@ Para aproveitar ao máximo este curso, você precisará de:
     ![Thiago Vivan](https://avatars.githubusercontent.com/u/80918128?v=4){ align=left width=80 }
 
     **Membro da Equipe**
+
     Graduando em Engenharia de Software (FCTE/UnB)  
 
 </div>
 
-## 📖 Recursos Adicionais
+## Recursos Adicionais
 
 - [OpenMP Documentation](https://www.openmp.org/specifications/)
 - [MPI Tutorial](https://mpitutorial.com/)
