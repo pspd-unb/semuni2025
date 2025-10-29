@@ -26,9 +26,13 @@ nav:
     - Paralelismo em C: modulo3/paralelismo-c.md
   - Cloud Native & Kubernetes:
     - Introdução ao Cloud Native: modulo4/cloud-native.md
-    - Kubernetes Básico: modulo4/kubernetes-basico.md
-    - DevOps com Kubernetes: modulo4/devops-kubernetes.md
-    - Deploy de Aplicações: modulo4/deploy-aplicacoes.md
+    - Containerização com Docker: modulo4/docker-teoria.md
+    - Prática de Docker: modulo4/docker-pratica.md
+    - Ferramentas de CI/CD: modulo4/ci-cd.md
+    - Projeto 1: modulo4/projeto1.md
+    - Kubernetes - Teoria: modulo4/kubernetes-teoria.md
+    - Kubernetes - Prática: modulo4/kubernetes-pratica.md
+    - Projeto 2: modulo4/projeto2.md
 
 # Configuration
 theme:
