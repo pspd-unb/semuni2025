@@ -1,0 +1,22 @@
+Django==5.1.2
+djangorestframework==3.15.2
+django-cors-headers==4.3.*
+psycopg[binary]==3.2.3
+django-environ==0.11.2
+django-autoslug==1.9.9
+django-countries==7.5.1
+django-phonenumber-field==7.3.0
+phonenumbers==8.13.32
+drf-yasg==1.21.7
+Pillow==10.2.0
+argon2-cffi==23.1.0
+djoser==2.2.2
+django-taggit==5.0.1
+django-filter==24.1
+
+# Develop
+django-debug-toolbar==4.4.*
+django_extensions==3.2.*
+pytest==8.3.*
+pytest-django==4.8.*
+ruff==0.7.*
