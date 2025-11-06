@@ -23,8 +23,8 @@ Ao concluir este módulo, os estudantes serão capazes de:
 | 2. Introdução ao Cloud Native + Dinâmica | 13h30 - 14h30 | 60 min |
 | 3. Containerização com Docker + Dinâmica | 14h30 - 15h | 30 min |
 | 4. Docker na prática | 15h - 15h45 | 45 min |
-| 5. Princípios de CI/CD | 15h45 - 16h15 | 30 min |
-| **Intervalo + Lanche** | **16h15 - 16h45** | **30min** |
+| **Intervalo + Lanche** | **15h45 - 16h15** | **30min** |
+| 5. Princípios de CI/CD | 16h15 - 16h45 | 30 min |
 | 6. Desafio 1 | 16h45 - 17h45 | 60 min |
 | 7. Desafio 1 - Solução/Correção | 17h45 - 18h30 | 45 min |
 | 8. Finalização - Dia 04 | 18h30 | ** |
