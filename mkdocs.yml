@@ -26,7 +26,7 @@ nav:
     - Paralelismo em C: modulo3/paralelismo-c.md
   - Cloud Native & Kubernetes:
     - Overview: modulo4/overview.md
-    - Introdução ao Cloud Native: modulo4/cloud-native.md
+    - Introdução ao Cloud Computing e ao Cloud Native: modulo4/cloud-native.md
     - Containerização com Docker: modulo4/docker-teoria.md
     - Prática de Docker: modulo4/docker-pratica.md
     - Princípios de CI/CD: modulo4/ci-cd.md

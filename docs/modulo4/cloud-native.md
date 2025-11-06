@@ -1,4 +1,106 @@
-# Introdução ao Cloud Native
+# Introdução ao Cloud Computing e ao Cloud Native
+
+## Cloud Computing
+
+A **computação em nuvem** é definida como a **disponibilidade sob demanda** de recursos computacionais, como armazenamento e infraestrutura, entregues como **serviços pela Internet**.
+Esse modelo elimina a necessidade de indivíduos e empresas gerenciarem seus próprios recursos físicos, permitindo que **paguem apenas pelo que utilizam**.
+
+### Contraste com a TI Tradicional
+
+Tradicionalmente, adquirir recursos computacionais era um processo **lento e caro**.
+As empresas precisavam comprar **servidores físicos e infraestrutura** por meio de processos que podiam levar meses, exigindo um **espaço físico especializado**, com energia e refrigeração adequadas, além de uma **equipe técnica** para gerenciá-los.
+Esse modelo tradicional é **difícil de escalar** quando a demanda aumenta ou os negócios crescem, frequentemente resultando em **superdimensionamento de recursos** e **baixa taxa de utilização**.
+
+A computação em nuvem **resolve esses problemas** ao oferecer recursos computacionais **escaláveis e sob demanda**.
+
+### Como Funciona a Computação em Nuvem
+
+Os **modelos de serviço em nuvem** operam com base no **compartilhamento de recursos, softwares e informações sob demanda** pela Internet.
+
+1. **Recursos Compartilhados:** Empresas ou indivíduos pagam para acessar um **pool virtual** de recursos compartilhados, incluindo computação, armazenamento e rede.
+2. **Gerenciamento Remoto:** Esses recursos ficam hospedados em **servidores remotos**, pertencentes e gerenciados pelos provedores de serviço.
+3. **Conectividade:** A nuvem utiliza uma **rede (geralmente a Internet)** para conectar os usuários à plataforma em nuvem, onde eles solicitam e acessam os serviços contratados.
+4. **Troca de Dados:** Um **servidor central** gerencia toda a comunicação entre os dispositivos clientes e os servidores, facilitando a troca de informações. **Segurança e privacidade** são componentes essenciais dessa comunicação.
+
+
+### Principais Modelos de Serviço (Controle e Responsabilidade)
+
+As fontes identificam **três modelos principais de serviço**, escolhidos de acordo com o nível de controle, flexibilidade e gerenciamento desejado:
+
+#### **Infraestrutura como Serviço (IaaS):**
+
+   * **O que oferece:** Acesso sob demanda a serviços de infraestrutura de TI, incluindo computação, armazenamento, rede e virtualização.
+   * **Nível de controle:** O IaaS oferece o **maior controle** sobre os recursos de TI, sendo o modelo mais próximo do ambiente tradicional **on-premise** (local).
+
+#### **Plataforma como Serviço (PaaS):**
+
+   * **O que oferece:** Todos os recursos de hardware e software necessários para o **desenvolvimento de aplicações** na nuvem.
+   * **Foco:** Permite que as empresas se concentrem totalmente no **desenvolvimento de software**, sem se preocupar com a infraestrutura subjacente.
+
+#### **Software como Serviço (SaaS):**
+
+   * **O que oferece:** Uma **pilha completa de aplicativos** entregue como serviço.
+   * **Gerenciamento:** O provedor é responsável por **toda a infraestrutura, manutenção e atualização** do software. O SaaS normalmente é uma **aplicação de uso final**.
+
+
+### Modelos de Implantação (Localização e Propriedade)
+
+Existem **três modelos distintos** de implantação da computação em nuvem:
+
+#### **Nuvem Pública (Public Cloud):**
+
+   * Operada por **provedores terceirizados de serviços em nuvem**.
+   * Oferece recursos de computação, armazenamento e rede pela Internet, permitindo acesso **sob demanda** a recursos compartilhados conforme as necessidades da empresa.
+
+#### **Nuvem Privada (Private Cloud):**
+
+   * Construída, gerenciada e de propriedade de **uma única organização**, hospedada **em seus próprios data centers** (também conhecida como *on-premise*).
+   * Oferece **maior controle, segurança e gestão de dados**, mantendo os benefícios de recursos compartilhados internamente.
+
+#### **Nuvem Híbrida (Hybrid Cloud):**
+
+   * Combina os modelos **público e privado**.
+   * Permite que as empresas aproveitem os **serviços da nuvem pública** enquanto mantêm a **segurança e conformidade** típicas das arquiteturas privadas.
+
+
+### Benefícios da Computação em Nuvem
+
+A adoção da **arquitetura em nuvem** oferece diversas vantagens:
+
+* **Econômica:** As empresas **pagam apenas pelo que usam**, evitando superdimensionar data centers e permitindo que as equipes de TI foquem em iniciativas estratégicas.
+* **Flexível e Escalável:** A nuvem permite **acesso de qualquer lugar** com conexão à Internet, possibilitando escalar recursos rapidamente conforme a demanda.
+* **Eficiente:** Empresas podem desenvolver e colocar novas aplicações em produção **de forma ágil**, sem se preocupar com a infraestrutura física.
+* **Segura:** A segurança na nuvem costuma ser **mais robusta** do que a de data centers corporativos, devido às medidas avançadas e à presença de **especialistas dedicados** dos provedores.
+* **Valor Estratégico:** Como os provedores oferecem **as inovações mais recentes** como serviço, as empresas obtêm **vantagens competitivas** e **maior retorno sobre o investimento (ROI)**, evitando tecnologias que se tornariam obsoletas rapidamente.
+
+
+### Casos de Uso e Indicadores de Adoção
+
+A computação em nuvem tem **aplicações amplas** e tende a se tornar o **ambiente padrão de TI corporativo**, graças à velocidade da inovação e à necessidade de alto desempenho.
+
+#### Casos de Uso Comuns
+
+* **Escalabilidade de Infraestrutura:** Facilita lidar com **flutuações na demanda computacional**, comum em setores como o varejo.
+* **Recuperação de Desastres:** Permite **backup seguro de recursos digitais**, sem a necessidade de construir novos data centers apenas para continuidade de negócios.
+* **Armazenamento de Dados:** Apoia data centers sobrecarregados ao armazenar **grandes volumes de dados**, facilitando o acesso, análise e backup.
+* **Desenvolvimento de Aplicações:** Fornece **ferramentas e plataformas** para criar e testar aplicações rapidamente, reduzindo o tempo de lançamento no mercado.
+* **Análise de Big Data:** Disponibiliza recursos praticamente **ilimitados** para processar grandes volumes de dados, acelerando **pesquisas e geração de insights**.
+
+#### Indicadores de Adequação à Nuvem
+
+Organizações que enfrentam desafios além da capacidade dos data centers tradicionais são **fortes candidatas** à adoção da nuvem.
+Esses casos incluem:
+
+* Crescimento acelerado dos negócios que **excede a capacidade atual de infraestrutura**.
+* **Baixa utilização** dos recursos existentes.
+* **Grandes volumes de dados** sobrecarregando o armazenamento local.
+* **Lentidão** em respostas com infraestrutura local.
+* **Atrasos no desenvolvimento de produtos** devido a limitações de infraestrutura.
+* **Problemas de fluxo de caixa** causados por altos custos de infraestrutura.
+* **Usuários distribuídos** ou acesso predominante por **dispositivos móveis**.
+
+
+## Cloud Native
 
 Cloud native é uma abordagem fundamental para construir e executar aplicações escaláveis que aproveitam ao máximo os serviços e modelos de entrega baseados em nuvem. O termo se refere menos ao **local onde a aplicação está hospedada** e mais a **como ela é construída e implantada**. Ser cloud native envolve adaptar-se às novas possibilidades e limitações oferecidas pela nuvem em comparação com a infraestrutura tradicional local (*on-premises*).
 
@@ -85,3 +187,5 @@ Cloud native é considerado uma **jornada contínua** de iteração e melhoria c
 [3] **IBM.** *What is cloud native?*. Disponível em: <https://www.ibm.com/think/topics/cloud-native>. Acesso em: 29 out. 2025.
 
 [4] **AWS.** *What is cloud native?*. Disponível em: <https://aws.amazon.com/what-is/cloud-native/>. Acesso em: 29 out. 2025.
+
+[5] **Google Cloud.** *What is cloud computing?*. Disponível em: <https://cloud.google.com/learn/what-is-cloud-computing?hl=pt-BR>. Acesso em: 06 nov. 2025.
